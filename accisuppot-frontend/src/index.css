@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url("E:/AcciSupport/accisuppot-frontend/src/components/Header-Footer/assets/doctorBg.jpg") ;
+
 }
 
 code {

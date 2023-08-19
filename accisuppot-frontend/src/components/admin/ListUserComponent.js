@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import UserService from "../../service/UserServices/UserService"
 import { Link } from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
+import "../admin/Button.css"
 
 const ListUserComponent = () => {
     const [users, setUsers]=useState([])
@@ -20,12 +21,23 @@ const ListUserComponent = () => {
   return (
     <div className="container">
         <br/> <br/> 
-        <h2 className="text-center">List Users</h2>
+        
         <br/>
-        <div>
-        <Link to="/add-user" className="btn btn-primary mb-2 ">Add User</Link>
+        <nav className="">
+
+
+
+        <div  style={{ width: "100%" }} className="p-3 mb-2 bg-success text-white " >
+            
+
+        <Link to="/add-user"  className="btn btn btn-warning mb-2 text" >Add New User</Link>
+        <Link to="/add-user" className="btn btn btn-warning mb-2 btn-spacing  text">Add New Hospital</Link>
+        <Link to="/add-user" className="btn btn btn-primary  mb-2 btn-spacing  text ">Logout</Link>
+        <br></br>
         
         </div>
+        </nav>
+        <br></br>
         <table className="table table-bordered table-dark table-striped">
 
             <thead>

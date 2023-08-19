@@ -9,7 +9,7 @@ import AddUserComponent from './components/admin/AddUserComponent';
 
 function App() {
   return (
-    <div style={{ width: "100%" }} className="App">
+    <div style={{ width: "100%" }} className="">
       <BrowserRouter>
         <HeaderComponent/>
             
